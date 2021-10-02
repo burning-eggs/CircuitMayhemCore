@@ -1,5 +1,6 @@
 package io.github.wakecode.cmcore;
 
+import io.github.wakecode.cmcore.setup.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +26,8 @@ public class CircuitMayhemCore {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public CircuitMayhemCore() {
+        Registration.register();
+
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
