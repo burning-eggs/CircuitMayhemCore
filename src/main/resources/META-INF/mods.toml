@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+[[mods]]
+modId="cmcore"
+version="${file.jarVersion}"
+displayName="Circuit Mayhem Core"
+authors="wake-code"
+description='''
+Core mod for Circuit Mayhem. Don't delete.
+'''
+[[dependencies.cmcore]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+# Here's another dependency
+[[dependencies.cmcore]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
